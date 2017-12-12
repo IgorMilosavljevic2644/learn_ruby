@@ -16,7 +16,7 @@ def translate (sent)
 			if word.include?("qu") == true
 				point = point + 1
 			end
-			
+
 			word = word[point..word.length] + word[0..point-1] + "ay"
 
 		end
@@ -29,6 +29,4 @@ end
 def first_letter_in (arr, sent)
 	arr.include?(sent[0]) 
 end
-
-puts translate("real glove")
 
